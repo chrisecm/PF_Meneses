@@ -1,3 +1,6 @@
+//LINK HACIA FIGMA//
+https://www.figma.com/file/U62shcGnQ1YAbILUPpMhpX/P%C3%A1gina-web---HTML?type=design&node-id=0%3A1&mode=design&t=uAfuBkqfkl5I7IH1-1
+
 //COMO EMPEZAR A COMPILAR SASS//
 
 1. Abrir la consola en esta carpeta con ctrl+ñ
