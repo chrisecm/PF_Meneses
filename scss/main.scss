@@ -1,0 +1,58 @@
+
+@import './secciones/header';
+@import './secciones/main-index';
+@import './secciones/main-nosotros';
+@import './secciones/main-servicios';
+@import './secciones/main-proyectos';
+@import './secciones/main-contacto';
+@import './variables/variables.scss';
+@import './variables/componentes.scss';
+
+/*TITULOS*/
+h1 {
+    color: #b0cbab;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px; }
+  
+  h2 {
+    color: #b0cbab;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium; }
+  
+  h3 {
+    color: #343a33;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller; }
+
+    /*ARTICLE*/
+
+article {
+    flex:auto;
+    margin: 10px 10px;
+    padding-right: 300px;
+    padding-left: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+    }
+    
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        font-size: smaller;
+        display: block;
+        
+    }
+    
+    /*LISTAS*/
+    li{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        font-size: smaller;
+    }
+    

@@ -1,0 +1,89 @@
+/*SERVICIOS PAGE*/
+/*CARDS*/
+
+.servicio{
+    width: 190px;
+    height: 254px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 5vh;
+   }
+   
+   .servicio-img {
+    background-color: #e5e6e4;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+    display: flex;
+    place-content: center;
+    position:static;
+   }
+   
+   @supports(object-fit: cover){
+    .servicio-img{
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    }
+}
+   
+   .servicio-info {
+    padding-top: 10%;
+   }
+   
+   svg {
+    width: 20px;
+    height: 20px;
+   }
+   
+   .servicio-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .servicios-title {
+    font-weight: 800;
+    font-size: 12;
+    line-height: 1.5;
+    padding-top: 20px;
+    
+   }
+   
+   .servicio-body {
+    font-size: .7em;
+    padding-bottom: 27px;
+   }
+   
+   /*Button*/
+   .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   .servicio-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(191, 228, 196, 0.25) 0px 13px 47px -5px, rgba(197, 238, 208, 0.3) 0px 8px 16px -8px;
+   }
+   
+   .servicio-button:hover {
+    border: 1px solid #e8dacd;
+    background-color: #eee2d6;
+    border-style:dashed;
+    
+   }
+   

@@ -1,0 +1,24 @@
+
+/*Boton*/
+
+@mixin base-button{
+    height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #b0cbab;; 
+	border-color: #b0cbab; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+    cursor: pointer;
+    text-align: center;
+    text-align-last: center;
+}
+
+button{
+    @include base-button();
+	background-color:#b0cbab;
+}
