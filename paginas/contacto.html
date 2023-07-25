@@ -7,46 +7,48 @@
     <title>Contacto</title>
 
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="website icon" type="png" href="/recursos/favicon.png">
 </head>
     
 <body>
-    <main>
         <!-- Header/Menú de la página -->
-        <nav class="content"> 
-            <header class="header">
+        <header class="header">
+            <nav class="content"> 
                 <a href="index.html"><img src="../recursos/logo.png" align="left" width="100 px" height="50 px"> </a>
-                
+                            
                     <ul class="menu" align="right">
-                        <li><a href="/index.html/index.html">HOME</a></li>
+                        <li><a href="index.html">HOME</a></li>
                         <li><a href="/paginas/nosotros.html">¿QUIÉN ES CHRIS?</a></li>
                         <li><a href="/paginas/servicios.html">SERVICIOS</a></li>
                         <li><a href="/paginas/proyectos.html">PROYECTOS</a></li>
                         <li><a class="nav-link active" aria-current="page" href="/paginas/contacto.html">CONTACTO</a></li>
                     </ul>
-            </header>
-        </nav> <br>
+            </nav>
+        </header>
 
     <!-- Formulario de contacto -->
-    <div class="contact_form">		
-        <h1>FORMULARIO DE CONTACTO</h1>
-	        <h2>Si te interesa alguno de nuestros servicios o <br> tienes alguna duda, no dudes en comunicarte con nosotros.</h2><br>
-        
-        <form class="colorful-form">
-            <div class="form-group">
-              <label class="form-label" for="name"><h3>Nombre:</h3></label>
-                <input required="" placeholder="Ingresa tu nombre" class="form-input" type="text">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="email"><h3>Correo electrónico:</h3></label>
-                <input required="" placeholder="Ingresa tu correo electrónico" class="form-input" name="email" id="email" type="email">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="message"><h3>Mensaje:</h3></label>
-                <textarea required="" placeholder="Escribe tu mensaje" class="form-input" name="message" id="message"></textarea>
-            </div>
-            <button class="form-button" type="submit"><h3>Enviar</h3></button>
-        </form>
-    </div>
+    <main class="formulario">
+        <div class="contact_form">		
+            <h1>FORMULARIO DE CONTACTO</h1>
+                <h2>Si te interesa alguno de nuestros servicios o tienes alguna duda, no dudes en comunicarte con nosotros.</h2>
+            
+            <form class="colorful-form">
+                <div class="form-group">
+                <label class="form-label" for="name"><h3>Nombre:</h3></label>
+                    <input required="" placeholder="Ingresa tu nombre" class="form-input" type="text">
+                </div>
+                <div class="form-group">
+                <label class="form-label" for="email"><h3>Correo electrónico:</h3></label>
+                    <input required="" placeholder="Ingresa tu correo electrónico" class="form-input" name="email" id="email" type="email">
+                </div>
+                <div class="form-group">
+                <label class="form-label" for="message"><h3>Mensaje:</h3></label>
+                    <textarea required="" placeholder="Escribe tu mensaje" class="form-input" name="message" id="message"></textarea>
+                </div>
+                <button class="form-button" type="submit"><h3>Enviar</h3></button>
+            </form>
+        </div>
+    </main>
 
           <footer>
             <hr align="center" width="100%" height="30%">
