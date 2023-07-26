@@ -8,3 +8,11 @@ table{
 	border-collapse: separate;
 	border-spacing: 20px 5px;
 }
+
+@media (max-width: 768px) {
+ /* Footer */
+ footer img {
+    height: 40px;
+    width: 40px; 
+  }
+}

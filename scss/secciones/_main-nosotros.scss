@@ -50,3 +50,17 @@
   .card-me:hover .card-description-me {
     transform: translateY(100%);
   }
+
+  @media (max-width: 768px) {
+  
+  /* Nosotros Page */
+  .nosotros img {
+    width: 300px; }
+  .texto-nosotros h1 {
+    font-size: 25px; }
+  .texto-nosotros p {
+    font-size: 12px; }
+  .texto-introduccion img {
+    width: 300px; 
+  } 
+}

@@ -1,48 +1,55 @@
+/*Boton*/
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #b0cbab;
+  border-color: #b0cbab;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+  text-align: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  background-color: #b0cbab;
+}
+
 /*HEADER*/
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+.navbar-brand img {
+  width: 120px;
+  height: 60px;
 }
 
-header {
+.container-fluid {
   background: #b0cbab;
-  justify-content: space-between;
-  height: 80px;
-  width: 100%;
+}
+
+.navbar-toggler img {
+  width: 40px;
+  border: 0;
+}
+
+/*!!!!! Texto e imagen */
+.contDeTxt Img {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
-header nav ul {
-  float: right;
+.txtChris {
+  width: 25rem;
 }
 
-header nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-header nav ul li a {
-  color: #ffffff;
-  font-size: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 7px 13px;
-  border-radius: 3px;
-  align-items: right;
-}
-
-li a.active, li a:hover {
-  background: #a6c0a1;
-}
-
-header nav img {
-  float: left;
-  width: 140px;
-  height: 75px;
-  padding: 10px;
+/*!!!!! nuevo contenedor de cards */
+.contCardIndex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /*CARDS*/
@@ -108,24 +115,6 @@ header nav img {
 
 @media (max-width: 768px) {
   /* Index */
-  /* Header */
-  .nav__toggle {
-    display: none;
-  }
-  .nav__menu {
-    flex-direction: row;
-  }
-  .nav__menuli {
-    display: block;
-  }
-  nav ul li a {
-    font-size: 10px;
-  }
-  header nav img {
-    width: 100px;
-    height: 60px;
-    margin-top: 8px;
-  }
   /* Texto de Introduccion */
   .texto-introduccion h1 {
     font-size: 30px;
@@ -187,24 +176,6 @@ header nav img {
     line-height: 1.4;
     align-items: center;
   }
-  /* Footer */
-  footer img {
-    height: 40px;
-    width: 40px;
-  }
-  /* Nosotros Page */
-  .nosotros img {
-    width: 300px;
-  }
-  .texto-nosotros h1 {
-    font-size: 25px;
-  }
-  .texto-nosotros p {
-    font-size: 12px;
-  }
-  .texto-introduccion img {
-    width: 300px;
-  }
 }
 /*SOBRE MI PAGE*/
 .card-me {
@@ -232,7 +203,6 @@ header nav img {
   display: flex;
   position: absolute;
   gap: 0.5em;
-  flex-direction: column;
   background-color: #f5f5f5;
   color: #212121;
   height: 70%;
@@ -258,6 +228,21 @@ header nav img {
   transform: translateY(100%);
 }
 
+@media (max-width: 768px) {
+  /* Nosotros Page */
+  .nosotros img {
+    width: 300px;
+  }
+  .texto-nosotros h1 {
+    font-size: 25px;
+  }
+  .texto-nosotros p {
+    font-size: 12px;
+  }
+  .texto-introduccion img {
+    width: 300px;
+  }
+}
 /*SERVICIOS PAGE*/
 /*CARDS*/
 .servicio {
