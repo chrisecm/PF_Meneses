@@ -1,14 +1,48 @@
 
 /*HEADER*/
+
 .navbar-brand img{
-    width: 120px;
+    width: 130px;
     height: 60px;
+    padding-left: 10px;
 }
 
 .container-fluid{
     background: $primary;
+    width: 100%;
+
 }
 
 .navbar-toggler img{
 width: 40px;
 }
+
+.navbar-light .navbar-toggler {
+    color: rgba(174, 136, 136, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-toggler button{
+    border-color: none;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    }
+
+    li a.active, li a:hover{
+        background: #a6c0a1;
+    }
+
+    #nav-item a{
+        color:#ffffff; 
+        padding: 7px 13px;
+        border-radius: 5px;
+    }
+
+
+    .navbar-collapse {
+        padding-right: 4rem;
+        flex-basis: 100%;
+        flex-grow: 0;
+        align-items: center;
+    }

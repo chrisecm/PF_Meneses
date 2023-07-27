@@ -1,15 +1,25 @@
 /*SERVICIOS PAGE*/
 /*CARDS*/
 
+.servicios h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
 .servicio{
-    width: 190px;
-    height: 254px;
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 280px;
     padding: .8em;
     background: #f5f5f5;
     position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    margin-top: 5vh;
+    margin-top: 5vh
    }
    
    .servicio-img {
@@ -61,7 +71,7 @@
    
    .servicio-body {
     font-size: .7em;
-    padding-bottom: 27px;
+    padding-bottom: 10px;
    }
    
    /*Button*/
@@ -82,8 +92,69 @@
    
    .servicio-button:hover {
     border: 1px solid #e8dacd;
-    background-color: #eee2d6;
+    background-color: #bbd5ae;
     border-style:dashed;
+    border-radius: 50px;
     
    }
    
+   @media (max-width: 668px) {
+   
+    .servicios h1{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 40px;
+        font-weight: bold;
+    }
+    
+    .servicio{
+        width: 120px;
+        height: 220px;
+       }
+       
+       .servicio-img {
+        height: 40%;
+        width: 100%;
+       }
+       
+       @supports(object-fit: cover){
+        .servicio-img{
+        height: 40%;
+        width: 100%;
+        }
+    }
+       
+       .servicio-info {
+        font-size: 10px;
+       }
+       
+       svg {
+        width: 10px;
+        height: 10px;
+       }
+       
+       .servicio-footer {
+       font-size: 10px;
+       justify-content: space-between;
+       align-items: center;
+       padding-top: inherit;
+    
+       }
+       
+       /*Text*/
+       .servicios-title {
+        font-size: 15px;
+       }
+       
+       .servicio-body {
+        font-size: .7em;
+        padding-bottom: inherit;
+        
+       }
+       
+       /*Button*/
+       .card-button {
+       width: 10px;
+       }
+       
+   }

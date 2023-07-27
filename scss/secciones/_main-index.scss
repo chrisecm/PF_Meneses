@@ -1,6 +1,15 @@
 
 /*!!!!! Texto e imagen */
-.contDeTxt Img{
+.Introduccion h1{
+  font-size: 40px;
+ text-align: center;
+ padding-top: 40px;
+ font-style: oblique;
+ font-weight: bold;
+}
+
+
+.contDeTxt{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +18,8 @@
 }
 
 .txtChris{
-  width: 25rem;
+  width: 20rem;
+  
 }
 
 /*!!!!! nuevo contenedor de cards */
@@ -92,15 +102,18 @@
     
   /* Index */
   /* Texto de Introduccion */
-    .texto-introduccion h1{
+    .Introduccion h1{
      font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
   }
        
-    .texto-introduccion p{
+    .txtChris{
     font-size: 12px;
+    padding-left: 30px;
   }
        
-    .texto-introduccion img{
+    .contDeTxt img{
     width: 300px;
   }
        
@@ -127,7 +140,7 @@
   }
        
   .card img {
-  width: 200px;
+  width: 222px;
   fill: #333;
   -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -176,5 +189,12 @@
   align-items: center;
   }     
 }
-       
-       
+
+.footer-content img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 40px;
+}

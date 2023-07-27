@@ -1,7 +1,16 @@
 /*FORMULARIO DE CONTACTO*/
-.formulario > h2{
+.formulario h2{
     font-size: small;
-    color: #343a33;
+    color: #b0cbab; 
+    font-weight: bold;
+}
+
+.formulario h1{
+  font-weight: bold;
+}
+
+.formulario h3{
+  font-weight: bold;
 }
 
 .contact_form{  
@@ -42,30 +51,61 @@ textarea{
     padding-left: 10px;
   margin-bottom: 20px; 
   padding-top: 15px; 
+  font-weight: bold;
 
 }
 
+.form-label{
+  margin-top: 10px;
+  font-weight: bold;
+}
 
 label{
   display: block; 
     float: center;  
 }
 
-
-button{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;     
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: #b0cbab;; 
-    border-color: #b0cbab; 
-    border-style: solid; 
-    border-radius: 10px;    
-    width: 420px;   
-  cursor: pointer;
-  text-align: center;
-  text-align-last: center;
+  .form-button{
+      @include base-button();
+      align-content: center;
 }
 
+@media (max-width: 768px) {
+  
+  .formulario h1{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .formulario h2{
+    font-size: 12px;
+}
+
+.formulario h3{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.contact_form{  
+    width: 360px; 
+    align-content: center;
+}
+
+
+input{
+   font-size: 15px;
+   width: 310px;
+}
+
+
+textarea{
+ font-size: 15px;
+width: 310px;
+}
+
+.form-button{
+  width: 310px;
+  place-content: center;
+}
+}
