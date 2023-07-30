@@ -9,17 +9,27 @@
 }
 
 
-.contDeTxt{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
+.contDeTxt p{
+    display: grid;
+    text-align: center;
+    margin: auto;
   
 }
 
+
 .txtChris{
   width: 20rem;
-  
+    display: block;
+    font-size: 12px;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+
+.Introduccion img{
+    width: 400px;
+    display: grid;
+    object-position: center;
+    margin: auto;
 }
 
 /*!!!!! nuevo contenedor de cards */
@@ -102,6 +112,17 @@
     
   /* Index */
   /* Texto de Introduccion */
+
+  .Introduccion{
+    column-count:1;
+    column-gap: 4em;
+	  column-rule: 1px solid #bbb;
+    column-width: 150px;
+    align-content: center;
+    margin-bottom: 10vh;
+    object-position: center;
+    align-content: center;
+  }
     .Introduccion h1{
      font-size: 30px;
     text-align: center;
@@ -109,12 +130,16 @@
   }
        
     .txtChris{
+    display: block;
     font-size: 12px;
-    padding-left: 30px;
+    margin: auto;
   }
        
     .contDeTxt img{
     width: 300px;
+    display: grid;
+    object-position: center;
+    margin: auto;
   }
        
        
@@ -137,6 +162,7 @@
     box-shadow: 0 0 0 5px #ffffff80;
     -webkit-transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 20px;
   }
        
   .card img {

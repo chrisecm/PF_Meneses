@@ -6,21 +6,64 @@ table{
     margin: auto;
     border-collapse: separate;
     border-spacing: 20px 5px;
+    
 }
 
-.proyectos h1{
+.proyectos{
+    column-count:2;
+    column-gap: 4em;
+	column-rule: 1px solid #bbb;
+    column-width: 150px;
+    margin-left: 20vh;
+    align-content: center;
+    margin-bottom: 10vh;
+    object-position: center;
+    margin-right: 20vh;
+}
+
+.proyecto h1{
     font-size: 40px;
     text-align: center;
     padding-top: 40px;
     font-weight: bold;
 }
 
+.proyecto h2{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-bottom: 15px;
+}
+
+
 .proyectos p{
-    padding-right: 100px;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 15px;
+}
+
+.proyectos img{
+    width: 450px;
+    display: grid;
+    object-position: center;
+    margin: auto;
 }
 
 @media (max-width: 768px) {
 
+    .proyectos{
+        column-count:1;
+        column-gap: 3em;
+        column-rule: 1px solid #bbb;
+        column-width: 140px;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        margin-bottom: 5vh;
+        align-content: center;
+    }
+    
     .proyectos p{
         font-size: 12px;
         padding-right: 20px;
@@ -36,7 +79,10 @@ table{
     }
 
     .proyectos img{
-        width: 350px;
+        width: 380px;
+        align-self: center;
+        padding-left: 12vh;
+       
     }
 
 }

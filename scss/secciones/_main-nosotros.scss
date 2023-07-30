@@ -8,7 +8,6 @@
  font-weight: bold;
 }
 
-
 .contDeTxt{
   display: flex;
   justify-content: center;
@@ -17,10 +16,19 @@
   
 }
 
-.txtChris{
-  width: 25rem;
-  margin-right: 40px;
-  
+.txtChris-nosotros{
+  width: 30rem;
+    display: block;
+    font-size: 12px;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+
+.Introduccion-nosotros img{
+  width: 400px;
+  display: grid;
+  object-position: center;
+  margin: auto;
 }
 
 .Banner-pic img{
@@ -42,11 +50,13 @@
     .Introduccion-nosotros h1 {
     font-size: 20px; }
   
-    .txtChris p {
-    font-size: 10px; }
+    .txtChris-nosotros{
+    font-size: 10px;
+    width: 20rem;
+   }
 
     .Banner-pic img{
-      width: 600px;
+      width: 400px;
     }
     
   }

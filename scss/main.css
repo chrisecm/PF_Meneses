@@ -52,15 +52,26 @@ li a.active, li a:hover {
   font-weight: bold;
 }
 
-.contDeTxt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
+.contDeTxt p {
+  display: grid;
+  text-align: center;
+  margin: auto;
 }
 
 .txtChris {
   width: 20rem;
+  display: block;
+  font-size: 12px;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+
+.Introduccion img {
+  width: 400px;
+  display: grid;
+  -o-object-position: center;
+     object-position: center;
+  margin: auto;
 }
 
 /*!!!!! nuevo contenedor de cards */
@@ -135,17 +146,37 @@ li a.active, li a:hover {
 @media (max-width: 768px) {
   /* Index */
   /* Texto de Introduccion */
+  .Introduccion {
+    -moz-column-count: 1;
+         column-count: 1;
+    -moz-column-gap: 4em;
+         column-gap: 4em;
+    -moz-column-rule: 1px solid #bbb;
+         column-rule: 1px solid #bbb;
+    -moz-column-width: 150px;
+         column-width: 150px;
+    align-content: center;
+    margin-bottom: 10vh;
+    -o-object-position: center;
+       object-position: center;
+    align-content: center;
+  }
   .Introduccion h1 {
     font-size: 30px;
     text-align: center;
     padding-top: 40px;
   }
   .txtChris {
+    display: block;
     font-size: 12px;
-    padding-left: 30px;
+    margin: auto;
   }
   .contDeTxt img {
     width: 300px;
+    display: grid;
+    -o-object-position: center;
+       object-position: center;
+    margin: auto;
   }
   /* Cartas con animacion*/
   .card {
@@ -162,6 +193,7 @@ li a.active, li a:hover {
     perspective: 1000px;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5019607843);
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 20px;
   }
   .card img {
     width: 222px;
@@ -223,9 +255,20 @@ li a.active, li a:hover {
   margin: 10px;
 }
 
-.txtChris {
-  width: 25rem;
-  margin-right: 40px;
+.txtChris-nosotros {
+  width: 30rem;
+  display: block;
+  font-size: 12px;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+
+.Introduccion-nosotros img {
+  width: 400px;
+  display: grid;
+  -o-object-position: center;
+     object-position: center;
+  margin: auto;
 }
 
 .Banner-pic img {
@@ -245,11 +288,12 @@ li a.active, li a:hover {
   .Introduccion-nosotros h1 {
     font-size: 20px;
   }
-  .txtChris p {
+  .txtChris-nosotros {
     font-size: 10px;
+    width: 20rem;
   }
   .Banner-pic img {
-    width: 600px;
+    width: 400px;
   }
 }
 /*SERVICIOS PAGE*/
@@ -262,17 +306,20 @@ li a.active, li a:hover {
 }
 
 .servicio {
-  display: block;
-  align-items: center;
   flex-wrap: wrap;
-  width: 220px;
-  height: 280px;
+  flex-direction: column-reverse;
+  width: 200px;
+  height: 300px;
   padding: 0.8em;
   background: #f5f5f5;
-  position: relative;
   overflow: visible;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-top: 5vh;
+  -webkit-column-break-inside: avoid;
+  display: inline-flex;
+  flex-direction: column;
+  place-content: center center;
+  margin: 15px;
 }
 
 .servicio-img {
@@ -361,15 +408,22 @@ svg {
   .servicio {
     width: 120px;
     height: 220px;
+    -webkit-column-break-inside: avoid;
+    display: inline-block;
+    -moz-column-count: 0;
+         column-count: 0;
+    box-sizing: border-box;
   }
   .servicio-img {
-    height: 40%;
     width: 100%;
+    display: grid;
+    height: auto;
   }
   @supports ((-o-object-fit: cover) or (object-fit: cover)) {
     .servicio-img {
       height: 40%;
       width: 100%;
+      color: #e8dacd;
     }
   }
   .servicio-info {
@@ -407,18 +461,68 @@ table {
   border-spacing: 20px 5px;
 }
 
-.proyectos h1 {
+.proyectos {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 4em;
+       column-gap: 4em;
+  -moz-column-rule: 1px solid #bbb;
+       column-rule: 1px solid #bbb;
+  -moz-column-width: 150px;
+       column-width: 150px;
+  margin-left: 20vh;
+  align-content: center;
+  margin-bottom: 10vh;
+  -o-object-position: center;
+     object-position: center;
+  margin-right: 20vh;
+}
+
+.proyecto h1 {
   font-size: 40px;
   text-align: center;
   padding-top: 40px;
   font-weight: bold;
 }
 
+.proyecto h2 {
+  font-size: 20px;
+  text-align: left;
+  padding-top: 20px;
+  font-weight: bold;
+  font-style: oblique;
+  margin-bottom: 15px;
+}
+
 .proyectos p {
-  padding-right: 100px;
+  margin: auto;
+  padding: auto;
+  margin-bottom: 15px;
+}
+
+.proyectos img {
+  width: 450px;
+  display: grid;
+  -o-object-position: center;
+     object-position: center;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
+  .proyectos {
+    -moz-column-count: 1;
+         column-count: 1;
+    -moz-column-gap: 3em;
+         column-gap: 3em;
+    -moz-column-rule: 1px solid #bbb;
+         column-rule: 1px solid #bbb;
+    -moz-column-width: 140px;
+         column-width: 140px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 5vh;
+    align-content: center;
+  }
   .proyectos p {
     font-size: 12px;
     padding-right: 20px;
@@ -431,7 +535,9 @@ table {
     padding-right: 20px;
   }
   .proyectos img {
-    width: 350px;
+    width: 380px;
+    align-self: center;
+    padding-left: 12vh;
   }
 }
 /*FORMULARIO DE CONTACTO*/
