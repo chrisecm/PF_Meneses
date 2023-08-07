@@ -9,15 +9,17 @@ table{
     
 }
 
+.proyecto{
+text-align: center;
+}
+
 .proyectos{
     column-count:2;
     column-gap: 4em;
-	column-rule: 1px solid #bbb;
     column-width: 150px;
     margin-left: 20vh;
     align-content: center;
     margin-bottom: 10vh;
-    object-position: center;
     margin-right: 20vh;
 }
 
@@ -46,7 +48,6 @@ table{
 
 .proyectos img{
     width: 450px;
-    display: grid;
     object-position: center;
     margin: auto;
 }
@@ -67,22 +68,21 @@ table{
     .proyectos p{
         font-size: 12px;
         padding-right: 20px;
+        align-content: center;
     }
 
-    .proyectos h1{
-        font-size: 30px;
+    .proyecto h1{
+        font-size: 20px;
     }
 
-    .proyectos h2{
+    .proyecto h2{
         font-size: 15px;
         padding-right: 20px;
     }
 
-    .proyectos img{
+    .proyecto img{
         width: 380px;
-        align-self: center;
-        padding-left: 12vh;
-       
+        text-align: center;
     }
 
 }

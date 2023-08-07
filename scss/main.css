@@ -272,7 +272,7 @@ li a.active, li a:hover {
 }
 
 .Banner-pic img {
-  width: 1200px;
+  width: 900px;
   display: block;
   align-items: center;
   padding-left: 50px;
@@ -305,9 +305,11 @@ li a.active, li a:hover {
   font-weight: bold;
 }
 
+.servicios {
+  text-align: center;
+}
+
 .servicio {
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
   width: 200px;
   height: 300px;
   padding: 0.8em;
@@ -318,19 +320,19 @@ li a.active, li a:hover {
   -webkit-column-break-inside: avoid;
   display: inline-flex;
   flex-direction: column;
-  place-content: center center;
+  border-radius: 5%;
   margin: 15px;
+  justify-content: center;
 }
 
-.servicio-img {
+.servicio-img img {
   background-color: #e5e6e4;
-  height: 40%;
+  height: 100%;
   width: 100%;
-  border-radius: 0.5rem;
-  transition: 0.3s ease;
   display: flex;
   place-content: center;
   position: static;
+  border-radius: 5%;
 }
 
 @supports ((-o-object-fit: cover) or (object-fit: cover)) {
@@ -339,6 +341,7 @@ li a.active, li a:hover {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    transition: 0.3s ease;
     -o-object-position: center center;
        object-position: center center;
   }
@@ -409,15 +412,13 @@ svg {
     width: 120px;
     height: 220px;
     -webkit-column-break-inside: avoid;
-    display: inline-block;
     -moz-column-count: 0;
          column-count: 0;
     box-sizing: border-box;
   }
-  .servicio-img {
+  .servicio-img img {
     width: 100%;
-    display: grid;
-    height: auto;
+    height: 80%;
   }
   @supports ((-o-object-fit: cover) or (object-fit: cover)) {
     .servicio-img {
@@ -461,20 +462,20 @@ table {
   border-spacing: 20px 5px;
 }
 
+.proyecto {
+  text-align: center;
+}
+
 .proyectos {
   -moz-column-count: 2;
        column-count: 2;
   -moz-column-gap: 4em;
        column-gap: 4em;
-  -moz-column-rule: 1px solid #bbb;
-       column-rule: 1px solid #bbb;
   -moz-column-width: 150px;
        column-width: 150px;
   margin-left: 20vh;
   align-content: center;
   margin-bottom: 10vh;
-  -o-object-position: center;
-     object-position: center;
   margin-right: 20vh;
 }
 
@@ -502,7 +503,6 @@ table {
 
 .proyectos img {
   width: 450px;
-  display: grid;
   -o-object-position: center;
      object-position: center;
   margin: auto;
@@ -526,18 +526,18 @@ table {
   .proyectos p {
     font-size: 12px;
     padding-right: 20px;
+    align-content: center;
   }
-  .proyectos h1 {
-    font-size: 30px;
+  .proyecto h1 {
+    font-size: 20px;
   }
-  .proyectos h2 {
+  .proyecto h2 {
     font-size: 15px;
     padding-right: 20px;
   }
-  .proyectos img {
+  .proyecto img {
     width: 380px;
-    align-self: center;
-    padding-left: 12vh;
+    text-align: center;
   }
 }
 /*FORMULARIO DE CONTACTO*/
